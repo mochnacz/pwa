@@ -1,6 +1,18 @@
 var dataCacheName = 'feijao2';
 var cacheName = 'feijao2';
 var filesToCache = [
+  "/pwa/index.html",
+  "/pwa/manifest.json",
+  "/pwa/styles/inline.css"
+  ];
+ // dey only
+if(typeof files == 'undefined') {
+  var files = [];
+} else {
+  files.push(',/');
+}
+
+var CACHE_NAME = 'feijao-v1';
   '/',
   '/index.html'
 ];
